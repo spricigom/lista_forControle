@@ -9,8 +9,15 @@
 
 
     //PROCESSAMENTO
-
+    let impar = [];
+    let  par = 2
+    for (let contador = 1; contador <= 50; contador++) {
+        if(contador % par != 0){
+            impar.push(contador)
+            
+        }
+    }
 
     //SAÍDA
-
+    document.write(`${impar.join(" - ")} <br>`)
 </script>
