@@ -7,11 +7,15 @@
     */
 
     //ENTRADA
-    
-
+    const qtdnotas = Number(prompt("Quantas notas o aluno teve"))
+    let somanotas = 0;
+    for (let contador = 0; contador < qtdnotas; contador++) {
+        const notas = Number(prompt("Informe a nota do aluno"));
+         somanotas = notas + somanotas;
+    }
     //PROCESSAMENTO
-    
+    const media = somanotas / qtdnotas;
 
     //SAÍDA
-
+    alert( `A média das notas é ${media.toFixed(1)}`);
 </script>
