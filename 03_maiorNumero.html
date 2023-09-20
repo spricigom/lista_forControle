@@ -7,11 +7,16 @@
     */
 
     //ENTRADA
-    const num = Number(prompt(``))
-    
+
+    let n=[];
+    for (let contador = 1; contador <= 5; contador++) {
+        const num = Number(prompt("fale um número"));
+        n.push(num);
+    }
+
     //PROCESSAMENTO
+    n.sort((a, b) => b-a)
 
-    
     //SAÍDA
-
+document.write(n[0]);
 </script>
