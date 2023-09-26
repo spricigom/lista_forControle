@@ -8,11 +8,23 @@
     */
 
     //ENTRADA
-
-
+    const repre1 = prompt("Informe o nome de um dos candidatos a representante.").trim();
+    const repre2 = prompt("Informe o nome de outro candidat* a representante.").trim();
+    const repre3 = prompt("Informe o nome do último canditad* a representante.").trim();
+    const votantes = Number(prompt("Informe quantos alunos irão votar").trim())
     //PROCESSAMENTO
-
+    let rep1 = 0;
+    let rep2 = 0;
+    let rep3 = 0;
+    for (let contador = votantes; contador >= 1; contador--) {
+        let votos = Number(prompt(`Informe em que representante você irá votar: (1)${repre1}, (2)${repre2} ou (3)${repre3}`));
+        switch (votos){
+            case 1: rep1++; break;
+            case 2: rep2++; break;
+            case 3: rep3++; break;
+        }
+    }
 
     //SAÍDA
-
+    document.write(`O candidato ${repre1} recebeu ${rep1} votos, totalizando ${((rep1/votantes)*100).toFixed(2)}% dos votos <br>O candidato ${repre2} recebeu ${rep2} votos, totalizando ${((rep2/votantes)*100).toFixed(2)}% dos votos <br> O candidato ${repre3} recebeu ${rep3} votos, totalizando ${((rep3/votantes)*100).toFixed(2)}% dos votos <br>`)
 </script>
