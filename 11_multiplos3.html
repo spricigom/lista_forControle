@@ -5,10 +5,15 @@
     */
 
     //ENTRADA
-
+    let multiplo = [];
+    for (let contador = 100; contador >= 1; contador--){
+        if (contador % 3 == 0)
+        multiplo.push(contador) ;  
+    }
 
     //PROCESSAMENTO
-
+    multiplo.sort((a, b) => a - b);
+    document.write(multiplo.join(" - "));
 
     //SAÍDA
 
